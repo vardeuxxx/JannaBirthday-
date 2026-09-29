@@ -1,0 +1,2563 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy 24th Birthday, Janna 💗</title>
+
+
+<style>
+
+/* =========================================================
+   💗 EASY SETTINGS
+========================================================= */
+
+:root {
+    --pink: #e75c9b;
+    --dark-pink: #7c3156;
+    --light-pink: #ffd9e9;
+    --background: #fff5fa;
+    --text: #4b2638;
+}
+
+
+/* =========================================================
+   GENERAL
+========================================================= */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background: var(--background);
+
+    color: var(--text);
+
+    overflow-x: hidden;
+
+    -webkit-text-size-adjust: 100%;
+
+    text-size-adjust: 100%;
+}
+
+body.locked {
+    overflow: hidden;
+}
+
+button {
+    font-family: inherit;
+}
+
+
+/* =========================================================
+   OPENING SCREEN
+========================================================= */
+
+#intro {
+
+    position: fixed;
+
+    inset: 0;
+
+    z-index: 1000;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            #ffd8ea 0%,
+            #ffb6d5 35%,
+            #f48ab8 70%,
+            #e96da7 100%
+        );
+
+    transition:
+        opacity .8s,
+        visibility .8s;
+}
+
+#intro.hide {
+
+    opacity: 0;
+
+    visibility: hidden;
+}
+
+.intro-box {
+
+    padding: 30px;
+
+    max-width: 650px;
+}
+
+.intro-heart {
+
+    font-size: 75px;
+
+    animation: pulse 1.5s infinite;
+}
+
+.intro-box h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(50px, 9vw, 85px);
+
+    color: white;
+
+    line-height: 1;
+}
+
+.intro-box p {
+
+    color: white;
+
+    margin: 20px 0 30px;
+
+    font-size: 15px;
+}
+
+.open-btn {
+
+    border: none;
+
+    border-radius: 999px;
+
+    padding: 15px 30px;
+
+    cursor: pointer;
+
+    background: white;
+
+    color: #dc4f91;
+
+    font-weight: bold;
+
+    box-shadow:
+        0 10px 30px #b9387050;
+
+    transition: .3s;
+}
+
+.open-btn:hover {
+
+    transform:
+        translateY(-3px)
+        scale(1.03);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+header {
+
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 55px 20px;
+
+    background:
+        radial-gradient(circle at 15% 20%, #fff 0 5%, transparent 25%),
+        radial-gradient(circle at 85% 80%, #ffe0ee 0 6%, transparent 25%),
+        linear-gradient(135deg, #fff7fb, #ffd9e9 50%, #fff);
+}
+
+.hero {
+
+    position: relative;
+
+    width: min(920px, 100%);
+
+    padding: 70px 55px 62px;
+
+    z-index: 2;
+
+    border: 1.5px solid #e98ab1;
+
+    outline: 1px solid rgba(233,138,177,.45);
+
+    outline-offset: 8px;
+
+    background: rgba(255,255,255,.16);
+
+    box-shadow: 0 20px 60px rgba(156,60,101,.08);
+
+    overflow: hidden;
+}
+
+/* Elegant floral-style corner decorations */
+.hero::before,
+.hero::after {
+
+    position: absolute;
+
+    font-family: Georgia, serif;
+
+    color: #e75c9b;
+
+    line-height: 1;
+
+    pointer-events: none;
+
+    opacity: .85;
+}
+
+.hero::before {
+
+    content: "🌹  ❀";
+
+    left: 12px;
+
+    top: 8px;
+
+    font-size: 34px;
+
+    transform: rotate(-8deg);
+}
+
+.hero::after {
+
+    content: "❀  🌹";
+
+    right: 12px;
+
+    bottom: 8px;
+
+    font-size: 34px;
+
+    transform: rotate(-8deg);
+}
+
+.kicker {
+
+    letter-spacing: 4px;
+
+    text-transform: uppercase;
+
+    color: #d85291;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+.hero h1 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(55px, 10vw, 105px);
+
+    line-height: .95;
+
+    margin: 20px 0;
+
+    color: #7c3156;
+}
+
+.hero h1 span {
+
+    color: #e75c9b;
+
+    font-style: italic;
+}
+
+.hero p {
+
+    font-size: 17px;
+
+    line-height: 1.8;
+
+    max-width: 650px;
+
+    margin: auto;
+
+    color: #70475b;
+}
+
+.date {
+
+    margin-top: 25px;
+
+    font-size: 13px;
+
+    color: #bd5b85;
+}
+
+.scroll {
+
+    margin-top: 45px;
+
+    color: #d85291;
+
+    font-size: 12px;
+
+    letter-spacing: 2px;
+
+    animation: bounce 2s infinite;
+}
+
+
+/* =========================================================
+   SECTIONS
+========================================================= */
+
+section {
+
+    padding: 90px 20px;
+}
+
+.container {
+
+    width: min(1100px, 100%);
+
+    margin: auto;
+}
+
+.section-title {
+
+    text-align: center;
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(40px, 6vw, 55px);
+
+    color: #7c3156;
+}
+
+.section-sub {
+
+    text-align: center;
+
+    color: #9a667d;
+
+    margin: 12px auto 50px;
+
+    max-width: 650px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   📸 FLIP MEMORY CARDS
+========================================================= */
+
+.gallery {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 18px;
+
+    perspective: 1200px;
+}
+
+.memory-card {
+
+    height: 420px;
+
+    cursor: pointer;
+
+    perspective: 1200px;
+
+    -webkit-tap-highlight-color: transparent;
+
+    touch-action: manipulation;
+}
+
+.memory-inner {
+
+    position: relative;
+
+    width: 100%;
+
+    height: 100%;
+
+    transition:
+        transform .8s cubic-bezier(.4,.2,.2,1);
+
+    transform-style: preserve-3d;
+}
+
+.memory-card.flipped .memory-inner {
+
+    transform: rotateY(180deg);
+}
+
+
+/* FRONT AND BACK */
+
+.memory-front,
+.memory-back {
+
+    position: absolute;
+
+    width: 100%;
+
+    height: 100%;
+
+    border-radius: 25px;
+
+    overflow: hidden;
+
+    backface-visibility: hidden;
+
+    -webkit-backface-visibility: hidden;
+
+    box-shadow:
+        0 15px 40px rgba(156,60,101,.18);
+}
+
+
+/* =========================================================
+   FRONT PHOTO
+========================================================= */
+
+.memory-front {
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffc5df,
+            #f58bb9
+        );
+}
+
+.memory-front img {
+
+    width: 100%;
+
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: .5s;
+}
+
+.memory-card:hover
+.memory-front img {
+
+    transform: scale(1.05);
+}
+
+
+/* CLICK ME LABEL */
+
+.memory-front::after {
+
+    content:
+        "CLICK ME 💗";
+
+    position: absolute;
+
+    bottom: 15px;
+
+    left: 50%;
+
+    transform:
+        translateX(-50%);
+
+    background:
+        rgba(255,255,255,.9);
+
+    color: #a13d6b;
+
+    padding:
+        8px 15px;
+
+    border-radius: 50px;
+
+    font-size: 10px;
+
+    font-weight: bold;
+
+    letter-spacing: 1px;
+
+    white-space: nowrap;
+}
+
+
+/* =========================================================
+   💌 BACK OF CARD
+========================================================= */
+
+.memory-back {
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #ffe7f1
+        );
+
+    transform:
+        rotateY(180deg);
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    padding: 28px;
+
+    border:
+        2px solid #ffd0e2;
+}
+
+.memory-back-content {
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    height: 100%;
+}
+
+.heart-icon {
+
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+    animation:
+        pulse 2s infinite;
+}
+
+.memory-back h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 27px;
+
+    color: #8b315a;
+
+    margin-bottom: 15px;
+}
+
+.memory-back p {
+
+    font-size: 13px;
+
+    line-height: 1.8;
+
+    color: #70475b;
+}
+
+.small-signature {
+
+    margin-top: 20px;
+
+    font-family: Georgia, serif;
+
+    font-size: 18px;
+
+    color: #d34d8b;
+}
+
+
+/* =========================================================
+   💕 MEMORY TEXT BELOW
+========================================================= */
+
+.memory-hint {
+
+    text-align: center;
+
+    margin-top: 45px;
+
+    color: #b45d82;
+
+    font-family: Georgia, serif;
+
+    font-size: 20px;
+
+    font-style: italic;
+}
+
+
+/* =========================================================
+   💌 LOVE LETTER
+========================================================= */
+
+.letter-wrap {
+
+    display: grid;
+
+    grid-template-columns:
+        1fr 1.2fr;
+
+    gap: 35px;
+
+    align-items: center;
+}
+
+/* =========================================================
+   💌 OPENING ENVELOPE
+========================================================= */
+
+.letter-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 560px;
+}
+
+.envelope-wrap {
+    position: relative;
+    width: min(620px, 100%);
+    height: 430px;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    touch-action: manipulation;
+    perspective: 1200px;
+}
+
+.envelope {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+/* Envelope body */
+.envelope-front {
+    position: absolute;
+    inset: 0;
+    border-radius: 28px;
+    overflow: visible;
+    background: linear-gradient(145deg, #f58bb9, #e968a6);
+    box-shadow: 0 25px 55px rgba(193,62,117,.22);
+    border: 1px solid rgba(255,255,255,.8);
+}
+
+/* Envelope bottom folds */
+.envelope-front::before,
+.envelope-front::after {
+    content: "";
+    position: absolute;
+    z-index: 3;
+    bottom: 0;
+    width: 51%;
+    height: 58%;
+    background: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.02));
+    pointer-events: none;
+}
+
+.envelope-front::before {
+    left: 0;
+    clip-path: polygon(0 0, 100% 100%, 0 100%);
+    border-bottom-left-radius: 28px;
+}
+
+.envelope-front::after {
+    right: 0;
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    border-bottom-right-radius: 28px;
+}
+
+/* The actual top flap */
+.envelope-flap {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background: linear-gradient(160deg, #f9a3c8, #ed76aa);
+    clip-path: polygon(0 0, 100% 0, 50% 100%);
+    transform-origin: top center;
+    transform: rotateX(0deg);
+    transition: transform .85s cubic-bezier(.22,.8,.2,1);
+    filter: drop-shadow(0 5px 5px rgba(156,60,101,.12));
+    pointer-events: none;
+}
+
+.envelope-wrap.open .envelope-flap {
+    transform: rotateX(165deg);
+}
+
+/* Name printed on the envelope */
+.envelope-name {
+    position: absolute;
+    z-index: 6;
+    left: 50%;
+    top: 44%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: Georgia, serif;
+    font-size: clamp(32px, 5vw, 48px);
+    font-weight: bold;
+    text-shadow: 0 2px 8px rgba(124,49,86,.18);
+    transition: opacity .35s ease;
+}
+
+.envelope-wrap.open .envelope-name {
+    opacity: .25;
+}
+
+.envelope-seal {
+    position: absolute;
+    z-index: 8;
+    left: 50%;
+    bottom: 23%;
+    transform: translateX(-50%);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ffb0d0, #e95796);
+    border: 4px solid #fff0f7;
+    box-shadow: 0 7px 18px rgba(124,49,86,.2);
+    font-size: 29px;
+    transition: transform .45s ease, opacity .4s ease;
+}
+
+.envelope-wrap.open .envelope-seal {
+    transform: translateX(-50%) scale(.7);
+    opacity: 0;
+}
+
+.open-envelope-note {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    bottom: 7%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,.95);
+    font-size: 11px;
+    font-weight: bold;
+    letter-spacing: 1.8px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    transition: opacity .3s ease;
+}
+
+.envelope-wrap.open .open-envelope-note {
+    opacity: 0;
+}
+
+/* Letter rises out of the envelope */
+.pop-letter {
+    position: absolute;
+    z-index: 7;
+    left: 7%;
+    top: 7%;
+    width: 86%;
+    min-height: 360px;
+    padding: 34px 38px;
+    border-radius: 10px 10px 18px 18px;
+    background: linear-gradient(145deg, #fff, #fff5fa);
+    border: 2px solid #f3b0cb;
+    box-shadow: 0 18px 45px rgba(156,60,101,.18);
+    transform: translateY(245px) scale(.92);
+    opacity: 0;
+    pointer-events: none;
+    transition: transform .95s cubic-bezier(.22,.8,.2,1), opacity .35s ease;
+}
+
+.envelope-wrap.open .pop-letter {
+    transform: translateY(-155px) scale(1);
+    opacity: 1;
+}
+
+.pop-letter::before,
+.pop-letter::after {
+    content: "❀";
+    position: absolute;
+    color: #e75c9b;
+    font-size: 25px;
+}
+
+.pop-letter::before { top: 12px; left: 16px; }
+.pop-letter::after { bottom: 12px; right: 16px; }
+
+.pop-letter h3 {
+    font-family: Georgia, serif;
+    color: #d34d8b;
+    font-size: 31px;
+    margin-bottom: 15px;
+}
+
+.pop-letter p {
+    color: #70475b;
+    line-height: 1.8;
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.pop-letter .small-signature {
+    margin-top: 18px;
+    font-family: Georgia, serif;
+    font-size: 18px;
+    color: #d34d8b;
+}
+
+/* Background side letter is replaced by the pop-up letter */
+.letter-card {
+    display: none;
+}
+/* =========================================================
+   🎵 MUSIC
+========================================================= */
+
+.music {
+
+    background: #7c3156;
+
+    color: white;
+
+    border-radius: 30px;
+
+    padding: 35px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    gap: 20px;
+}
+
+.music h3 {
+
+    font-family: Georgia, serif;
+
+    font-size: 32px;
+}
+
+.music p {
+
+    opacity: .8;
+
+    font-size: 13px;
+
+    margin-top: 5px;
+}
+
+.music button {
+
+    background: white;
+
+    color: #7c3156;
+
+    border: none;
+
+    border-radius: 50%;
+
+    width: 60px;
+
+    height: 60px;
+
+    cursor: pointer;
+
+    font-size: 20px;
+
+    flex-shrink: 0;
+}
+
+audio {
+
+    display: none;
+}
+
+
+/* =========================================================
+   💗 FINAL SURPRISE
+========================================================= */
+
+.special {
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            #fff,
+            #ffe5f0
+        );
+}
+
+.special-card {
+
+    max-width: 780px;
+
+    margin: auto;
+
+    background: white;
+
+    border-radius: 35px;
+
+    padding: 55px 35px;
+
+    box-shadow:
+        0 20px 60px #9c3c6520;
+}
+
+.big-heart {
+
+    font-size: 60px;
+
+    animation:
+        pulse 2s infinite;
+}
+
+.special-card h2 {
+
+    font-family: Georgia, serif;
+
+    font-size: clamp(40px, 6vw, 55px);
+
+    color: #d34d8b;
+
+    margin: 12px 0 20px;
+}
+
+.special-card > p {
+
+    line-height: 2;
+
+    color: #70475b;
+}
+
+.main-btn {
+
+    margin-top: 25px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e75c9b,
+            #f28ab7
+        );
+
+    color: white;
+
+    box-shadow:
+        0 10px 30px #e75c9b40;
+}
+
+.hidden-message {
+
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 28px;
+
+    border-radius: 20px;
+
+    background: #fff0f6;
+
+    color: #9b3f6a;
+
+    line-height: 1.9;
+}
+
+.hidden-message.show {
+
+    display: block;
+
+    animation:
+        fadeUp .7s;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+footer {
+
+    text-align: center;
+
+    padding: 40px 20px;
+
+    color: #b06a89;
+
+    font-size: 12px;
+}
+
+
+/* =========================================================
+   💕 FLOATING HEARTS
+========================================================= */
+
+.heart {
+
+    position: fixed;
+
+    bottom: -30px;
+
+    z-index: 1;
+
+    pointer-events: none;
+
+    animation:
+        floatUp linear forwards;
+
+    opacity: .65;
+}
+
+
+/* =========================================================
+   ANIMATIONS
+========================================================= */
+
+@keyframes pulse {
+
+    50% {
+
+        transform:
+            scale(1.1);
+    }
+}
+
+@keyframes bounce {
+
+    50% {
+
+        transform:
+            translateY(8px);
+    }
+}
+
+@keyframes fadeUp {
+
+    from {
+
+        opacity: 0;
+
+        transform:
+            translateY(15px);
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform:
+            translateY(0);
+    }
+}
+
+@keyframes floatUp {
+
+    to {
+
+        transform:
+            translateY(-110vh)
+            rotate(25deg);
+
+        opacity: 0;
+    }
+}
+
+
+/* =========================================================
+   📱 TABLET
+========================================================= */
+
+@media(max-width: 1000px) {
+
+    .gallery {
+
+        grid-template-columns:
+            repeat(3, 1fr);
+    }
+
+}
+
+
+/* =========================================================
+   📱 MOBILE
+========================================================= */
+
+@media(max-width: 700px) {
+
+    .gallery {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    /* The 5th memory sits centered below the first 4 */
+    .gallery .memory-card:nth-child(5) {
+
+        grid-column: 1 / -1;
+
+        width: calc((100% - 10px) / 2);
+
+        justify-self: center;
+    }
+
+    .memory-card {
+
+        height: 360px;
+    }
+
+    .memory-back h3 {
+
+        font-size: 22px;
+    }
+
+    .memory-back p {
+
+        font-size: 12px;
+    }
+
+    .letter-wrap {
+
+        grid-template-columns: 1fr;
+
+    }
+
+    .envelope-wrap,
+    .envelope {
+
+        min-height: 360px;
+    }
+
+}
+
+
+@media(max-width: 450px) {
+
+    body {
+
+        width: 100%;
+
+        overflow-x: hidden;
+    }
+
+    header {
+
+        min-height: 100svh;
+
+        padding: 35px 15px;
+    }
+
+    .hero {
+
+        padding: 52px 22px 45px;
+
+        outline-offset: 5px;
+    }
+
+    .hero::before,
+    .hero::after {
+
+        font-size: 24px;
+    }
+
+    .kicker {
+
+        letter-spacing: 2.5px;
+
+        font-size: 9px;
+    }
+
+    .hero h1 {
+
+        font-size: clamp(43px, 13vw, 58px);
+
+        line-height: .94;
+
+        margin: 16px 0;
+    }
+
+    .hero p {
+
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+    .date {
+
+        margin-top: 18px;
+
+        font-size: 12px;
+    }
+
+    .scroll {
+
+        margin-top: 30px;
+
+        font-size: 9px;
+
+        letter-spacing: 1.5px;
+    }
+
+    section {
+
+        padding: 55px 15px;
+    }
+
+    .section-title {
+
+        font-size: 38px;
+    }
+
+    .section-sub {
+
+        font-size: 13px;
+
+        margin-bottom: 30px;
+    }
+
+    .gallery {
+
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+
+        gap: 10px;
+    }
+
+    .gallery .memory-card:nth-child(5) {
+
+        width: calc((100% - 10px) / 2);
+    }
+
+    .memory-card {
+
+        height: 285px;
+    }
+
+    .memory-front,
+    .memory-back {
+
+        border-radius: 18px;
+    }
+
+    .memory-front::after {
+
+        bottom: 10px;
+
+        padding: 7px 11px;
+
+        font-size: 8px;
+    }
+
+    .memory-back {
+
+        padding: 12px;
+    }
+
+    .heart-icon {
+
+        font-size: 27px;
+
+        margin-bottom: 6px;
+    }
+
+    .memory-back h3 {
+
+        font-size: 17px;
+
+        margin-bottom: 7px;
+    }
+
+    .memory-back p {
+
+        font-size: 9.5px;
+
+        line-height: 1.5;
+    }
+
+    .small-signature {
+
+        font-size: 13px;
+
+        margin-top: 8px;
+    }
+
+    .memory-hint {
+
+        margin-top: 30px;
+
+        font-size: 16px;
+
+        line-height: 1.5;
+    }
+
+    .letter-wrap {
+
+        gap: 22px;
+    }
+
+    .envelope-wrap,
+    .envelope {
+
+        min-height: 330px;
+    }
+
+    .envelope-front,
+    .envelope-letter {
+
+        border-radius: 24px;
+    }
+
+    .envelope-front {
+
+        padding: 25px 20px;
+    }
+
+    .envelope-front-content .envelope-heart {
+
+        font-size: 42px;
+
+        margin-bottom: 8px;
+    }
+
+    .envelope-front-content h2 {
+
+        font-size: 30px;
+
+        margin-bottom: 10px;
+    }
+
+    .envelope-front-content p {
+
+        font-size: 11px;
+
+        line-height: 1.6;
+    }
+
+    .envelope-front-content .tap-note {
+
+        margin-top: 15px;
+
+        padding: 8px 13px;
+
+        font-size: 8px;
+    }
+
+    .envelope-letter {
+
+        padding: 22px;
+    }
+
+    .envelope-letter-content h3 {
+
+        font-size: 23px;
+
+        margin-bottom: 10px;
+    }
+
+    .envelope-letter-content p {
+
+        font-size: 11px;
+
+        line-height: 1.65;
+
+        margin-bottom: 9px;
+    }
+
+    .envelope-letter-content .small-signature {
+
+        margin-top: 12px;
+
+        font-size: 15px;
+    }
+
+    .letter-card {
+
+        border-radius: 24px;
+
+        padding: 25px 20px;
+    }
+
+    .letter-card h3 {
+
+        font-size: 28px;
+    }
+
+    .letter-card p {
+
+        font-size: 13px;
+
+        line-height: 1.8;
+    }
+
+    .music {
+
+        padding: 22px;
+
+        border-radius: 24px;
+    }
+
+    .music h3 {
+
+        font-size: 23px;
+    }
+
+    .music p {
+
+        font-size: 11px;
+
+        line-height: 1.5;
+    }
+
+    .music button {
+
+        width: 52px;
+
+        height: 52px;
+    }
+
+    .special-card {
+
+        padding: 40px 22px;
+
+        border-radius: 25px;
+    }
+
+}
+
+/* =========================================================
+   📱 ENVELOPE MOBILE TUNING
+========================================================= */
+
+@media(max-width: 700px) {
+    .letter-wrap {
+        min-height: 500px;
+    }
+
+    .envelope-wrap {
+        height: 350px;
+    }
+
+    .pop-letter {
+        left: 4%;
+        width: 92%;
+        min-height: 320px;
+        padding: 25px 24px;
+    }
+
+    .envelope-wrap.open .pop-letter {
+        transform: translateY(-125px) scale(1);
+    }
+
+    .pop-letter h3 {
+        font-size: 26px;
+    }
+
+    .pop-letter p {
+        font-size: 11px;
+        line-height: 1.6;
+    }
+}
+
+@media(max-width: 450px) {
+    .letter-wrap {
+        min-height: 430px;
+    }
+
+    .envelope-wrap {
+        height: 285px;
+    }
+
+    .envelope-name {
+        font-size: 31px;
+    }
+
+    .envelope-seal {
+        width: 52px;
+        height: 52px;
+        font-size: 23px;
+    }
+
+    .pop-letter {
+        min-height: 270px;
+        padding: 21px 18px;
+    }
+
+    .envelope-wrap.open .pop-letter {
+        transform: translateY(-95px) scale(1);
+    }
+
+    .pop-letter h3 {
+        font-size: 23px;
+        margin-bottom: 9px;
+    }
+
+    .pop-letter p {
+        font-size: 9px;
+        line-height: 1.45;
+        margin-bottom: 7px;
+    }
+
+    .pop-letter .small-signature {
+        margin-top: 10px;
+        font-size: 15px;
+    }
+}
+
+</style>
+
+</head>
+
+
+<body class="locked">
+
+
+<!-- =========================================================
+     💗 OPENING
+========================================================= -->
+
+<div id="intro">
+
+    <div class="intro-box">
+
+        <div class="intro-heart">
+            💗
+        </div>
+
+        <h1>
+            For Janna
+        </h1>
+
+        <p>
+            A little birthday surprise from Natz,
+            made with love.
+        </p>
+
+        <button
+            class="open-btn"
+            onclick="openSite()">
+
+            Open Your Surprise ✨
+
+        </button>
+
+    </div>
+
+</div>
+
+
+
+<!-- =========================================================
+     🎂 HERO
+========================================================= -->
+
+<header>
+
+    <div class="hero">
+
+        <div class="kicker">
+
+            October 2 • A Special Day
+
+        </div>
+
+
+        <h1>
+
+            Happy 24th Birthday, Babe!
+
+            <br>
+
+            <span>
+                
+            </span>
+
+        </h1>
+
+
+        <p>
+
+            To the girl who makes ordinary days
+            feel a little more special, this little
+            corner of the internet is just for you. 💗
+
+        </p>
+
+
+        <div class="date">
+
+            From Natz, with all my love.
+
+        </div>
+
+
+        <div class="scroll">
+
+            ↓ SCROLL DOWN, BIRTHDAY GIRL ↓
+
+        </div>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================================================
+     📸 MEMORIES
+========================================================= -->
+
+<section>
+
+    <div class="container">
+
+
+        <h2 class="section-title">
+
+            Our Little Memories
+
+        </h2>
+
+
+        <p class="section-sub">
+
+            Five little moments from our story.
+            Click each picture and see what's
+            behind it. 💗
+
+        </p>
+
+
+        <div class="gallery">
+
+
+            <!-- =================================================
+                 MEMORY 01
+            ================================================== -->
+
+            <div
+                class="memory-card"
+                onclick="flipCard(this)">
+
+                <div class="memory-inner">
+
+
+                    <div class="memory-front">
+
+                        <img
+                            src="photo1.jpg"
+                            alt="Our memory 1"
+                        >
+
+                    </div>
+
+
+                    <div class="memory-back">
+
+                        <div class="memory-back-content">
+
+                            <div class="heart-icon">
+                                💗
+                            </div>
+
+                            <h3>
+                                One of My Favorites
+                            </h3>
+
+                            <p>
+
+                                I don't know if you realize it,
+                                but moments like this are the
+                                ones I keep in my heart.
+
+                            </p>
+
+                            <div class="small-signature">
+
+                                — Natz 💗
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MEMORY 02
+            ================================================== -->
+
+            <div
+                class="memory-card"
+                onclick="flipCard(this)">
+
+                <div class="memory-inner">
+
+
+                    <div class="memory-front">
+
+                        <img
+                            src="photo2.jpg"
+                            alt="Our memory 2"
+                        >
+
+                    </div>
+
+
+                    <div class="memory-back">
+
+                        <div class="memory-back-content">
+
+                            <div class="heart-icon">
+                                🌸
+                            </div>
+
+                            <h3>
+                                That Smile
+                            </h3>
+
+                            <p>
+
+                                Your smile in this picture
+                                is one of those little things
+                                I could look at forever.
+
+                            </p>
+
+                            <div class="small-signature">
+
+                                You look beautiful. 💗
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MEMORY 03
+            ================================================== -->
+
+            <div
+                class="memory-card"
+                onclick="flipCard(this)">
+
+                <div class="memory-inner">
+
+
+                    <div class="memory-front">
+
+                        <img
+                            src="photo3.jpg"
+                            alt="Our memory 3"
+                        >
+
+                    </div>
+
+
+                    <div class="memory-back">
+
+                        <div class="memory-back-content">
+
+                            <div class="heart-icon">
+                                🥰
+                            </div>
+
+                            <h3>
+                                Just Us
+                            </h3>
+
+                            <p>
+
+                                I love the moments when it's
+                                just you and me, laughing,
+                                talking, and forgetting about
+                                everything else.
+
+                            </p>
+
+                            <div class="small-signature">
+
+                                I love us. 💕
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MEMORY 04
+            ================================================== -->
+
+            <div
+                class="memory-card"
+                onclick="flipCard(this)">
+
+                <div class="memory-inner">
+
+
+                    <div class="memory-front">
+
+                        <img
+                            src="photo4.jpg"
+                            alt="Our memory 4"
+                        >
+
+                    </div>
+
+
+                    <div class="memory-back">
+
+                        <div class="memory-back-content">
+
+                            <div class="heart-icon">
+                                ✨
+                            </div>
+
+                            <h3>
+                                Another Memory
+                            </h3>
+
+                            <p>
+
+                                One day we'll look back at
+                                these pictures and realize
+                                how many beautiful memories
+                                we made together.
+
+                            </p>
+
+                            <div class="small-signature">
+
+                                And I want more. 💗
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MEMORY 05
+            ================================================== -->
+
+            <div
+                class="memory-card"
+                onclick="flipCard(this)">
+
+                <div class="memory-inner">
+
+
+                    <div class="memory-front">
+
+                        <img
+                            src="photo5.jpg"
+                            alt="Our memory 5"
+                        >
+
+                    </div>
+
+
+                    <div class="memory-back">
+
+                        <div class="memory-back-content">
+
+                            <div class="heart-icon">
+                                💌
+                            </div>
+
+                            <h3>
+                                Here's To Us
+                            </h3>
+
+                            <p>
+
+                                We're getting closer to one year,
+                                and honestly, I can't wait to see
+                                what other memories we'll create.
+
+                            </p>
+
+                            <div class="small-signature">
+
+                                Almost one year, babe. 💗
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <div class="memory-hint">
+
+            "Every picture has a story.
+            These are only five of ours." 💗
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     💌 LOVE LETTER / OPENING ENVELOPE
+========================================================= -->
+
+<section>
+    <div class="container">
+        <div class="letter-wrap">
+
+            <div class="envelope-wrap"
+                 onclick="toggleEnvelope(this)"
+                 role="button"
+                 tabindex="0"
+                 aria-label="Open love letter envelope">
+
+                <div class="envelope">
+
+                    <div class="envelope-front">
+                        <div class="envelope-flap"></div>
+
+                        <div class="envelope-name">
+                            Dear Janna,
+                        </div>
+
+                        <div class="envelope-seal">💗</div>
+
+                        <div class="open-envelope-note">
+                            Tap to open 💌
+                        </div>
+                    </div>
+
+                    <div class="pop-letter">
+                        <h3>Dear Janna,</h3>
+
+                        <p>Happy 24th birthday, babe. ❤️</p>
+
+                        <p>
+                            I hope today reminds you how loved,
+                            appreciated, and important you are.
+                            You deserve the kind of happiness that stays,
+                            the kind of peace that makes your heart feel light,
+                            and all the little things that make you smile.
+                        </p>
+
+                        <p>
+                            I'm really grateful that somehow, out of all the
+                            people in this world, our paths crossed. Every laugh,
+                            every random conversation, every little moment we
+                            share has slowly become something I treasure.
+                        </p>
+
+                        <p>
+                            And now we're getting closer to our first year
+                            together this November. It honestly feels crazy
+                            how quickly time passes.
+                        </p>
+
+                        <p>
+                            I don't know exactly what every tomorrow will look like,
+                            but I know I want to keep making memories with you.
+                        </p>
+
+                        <p>
+                            So today, I just want you to enjoy your day.
+                            Don't forget how special you are to me, okay?
+                        </p>
+
+                        <div class="small-signature">
+                            Always yours,<br>
+                            Natz 💗
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- =========================================================
+     🎵 MUSIC
+========================================================= -->
+
+<section>
+
+    <div class="container">
+
+
+        <div class="music">
+
+
+            <div>
+
+                <h3>
+                    Our Song 🎧
+                </h3>
+
+                <p>
+
+                    "Best Part" —
+                    press play while you look
+                    through our memories.
+
+                </p>
+
+            </div>
+
+
+            <button
+                id="musicBtn"
+                onclick="toggleMusic()">
+
+                ▶
+
+            </button>
+
+
+            <!--
+
+                Put your song in the same folder
+                as this HTML file.
+
+                Rename the file:
+
+                the-night-we-met.mp3
+
+            -->
+
+            <audio
+                id="song"
+                loop>
+
+                <source
+                    src="the-night-we-met.mp3"
+                    type="audio/mpeg">
+
+            </audio>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     💌 FINAL SURPRISE
+========================================================= -->
+
+<section class="special">
+
+
+    <div class="container">
+
+
+        <div class="special-card">
+
+
+            <div class="big-heart">
+
+                💗
+
+            </div>
+
+
+            <h2>
+
+                One Last Thing...
+
+            </h2>
+
+
+            <p>
+
+                I could write a thousand words
+                and still probably wouldn't be able
+                to explain how much you mean to me.
+
+            </p>
+
+
+            <button
+                class="main-btn"
+                onclick="revealMessage()">
+
+                Open My Heart 💌
+
+            </button>
+
+
+            <div
+                id="hiddenMessage"
+                class="hidden-message">
+
+
+                Babe, thank you for being you.
+
+                Thank you for the smiles,
+                the talks, the memories,
+                and even the little moments
+                that may seem ordinary but mean
+                so much to me.
+
+                <br><br>
+
+
+                Happy 24th birthday, babe.
+
+                I hope this new chapter brings
+                you closer to every dream you're
+                chasing.
+
+                I'll be here cheering for you,
+                annoying you a little,
+                loving you a lot,
+                and making more memories
+                with you. 😂💗
+
+                <br><br>
+
+
+                Here's to your 24th,
+
+                and here's to us reaching
+                our first year this November.
+
+                <br><br>
+
+
+                <b>
+
+                    I love you, Babe.
+                    Happy Birthday. ❤️
+
+                </b>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<footer>
+
+    Made with love by Natz •
+    For Janna 💗
+
+</footer>
+
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+/* =========================================================
+   OPEN WEBSITE
+========================================================= */
+
+function openSite() {
+
+    document
+        .getElementById("intro")
+        .classList
+        .add("hide");
+
+    document
+        .body
+        .classList
+        .remove("locked");
+
+    startHearts();
+
+}
+
+
+
+/* =========================================================
+   🔄 FLIP MEMORY CARD
+========================================================= */
+
+function toggleEnvelope(wrapper) {
+
+    wrapper.classList.toggle("open");
+
+}
+
+/* Keyboard support for phones/accessibility and desktop */
+document.addEventListener("keydown", (event) => {
+
+    const envelope = document.querySelector(".envelope-wrap");
+
+    if (
+        envelope &&
+        document.activeElement === envelope &&
+        (event.key === "Enter" || event.key === " ")
+    ) {
+
+        event.preventDefault();
+
+        toggleEnvelope(envelope);
+
+    }
+
+});
+
+
+function flipCard(card) {
+
+    card.classList.toggle("flipped");
+
+}
+
+
+
+/* =========================================================
+   🎵 MUSIC
+========================================================= */
+
+function toggleMusic() {
+
+    const song =
+        document.getElementById("song");
+
+    const button =
+        document.getElementById("musicBtn");
+
+
+    if (song.paused) {
+
+        song
+            .play()
+
+            .then(() => {
+
+                button.textContent = "❚❚";
+
+            })
+
+            .catch(() => {
+
+                alert(
+                    "Make sure the file 'the-night-we-met.mp3' is in the same folder as index.html."
+                );
+
+            });
+
+    }
+
+    else {
+
+        song.pause();
+
+        button.textContent = "▶";
+
+    }
+
+}
+
+
+
+/* =========================================================
+   💗 FLOATING HEARTS
+========================================================= */
+
+function createHeart() {
+
+    const heart =
+        document.createElement("div");
+
+    heart.className = "heart";
+
+
+    const hearts = [
+        "💗",
+        "💕",
+        "💖",
+        "💞",
+        "♡",
+        "🌸"
+    ];
+
+
+    heart.textContent =
+        hearts[
+            Math.floor(
+                Math.random() *
+                hearts.length
+            )
+        ];
+
+
+    heart.style.left =
+        Math.random() * 100 + "vw";
+
+
+    heart.style.fontSize =
+        14 +
+        Math.random() * 22 +
+        "px";
+
+
+    heart.style.animationDuration =
+        5 +
+        Math.random() * 5 +
+        "s";
+
+
+    document
+        .body
+        .appendChild(heart);
+
+
+    setTimeout(() => {
+
+        heart.remove();
+
+    }, 10000);
+
+}
+
+
+function startHearts() {
+
+    setInterval(
+        createHeart,
+        700
+    );
+
+}
+
+
+
+/* =========================================================
+   ✨ CONFETTI
+========================================================= */
+
+function confetti() {
+
+    for (
+        let i = 0;
+        i < 45;
+        i++
+    ) {
+
+        const piece =
+            document.createElement("div");
+
+
+        const symbols = [
+            "💗",
+            "✨",
+            "💕",
+            "🎀",
+            "💖",
+            "🌸"
+        ];
+
+
+        piece.textContent =
+            symbols[
+                Math.floor(
+                    Math.random() *
+                    symbols.length
+                )
+            ];
+
+
+        piece.style.position =
+            "fixed";
+
+        piece.style.left =
+            "50vw";
+
+        piece.style.top =
+            "50vh";
+
+        piece.style.zIndex =
+            "1200";
+
+        piece.style.fontSize =
+            15 +
+            Math.random() * 25 +
+            "px";
+
+        piece.style.pointerEvents =
+            "none";
+
+
+        document
+            .body
+            .appendChild(piece);
+
+
+        const x =
+            (Math.random() - .5) *
+            800;
+
+
+        const y =
+            (Math.random() - .5) *
+            700;
+
+
+        piece.animate(
+
+            [
+
+                {
+                    transform:
+                        "translate(0,0) scale(1)",
+
+                    opacity: 1
+                },
+
+                {
+
+                    transform:
+                        `translate(${x}px, ${y}px)
+                         rotate(${Math.random() * 720 - 360}deg)
+                         scale(.3)`,
+
+                    opacity: 0
+
+                }
+
+            ],
+
+            {
+
+                duration:
+                    1200 +
+                    Math.random() * 1000,
+
+                easing:
+                    "cubic-bezier(.2,.8,.3,1)"
+
+            }
+
+        );
+
+
+        setTimeout(() => {
+
+            piece.remove();
+
+        }, 2300);
+
+    }
+
+}
+
+
+
+/* =========================================================
+   💌 FINAL MESSAGE
+========================================================= */
+
+function revealMessage() {
+
+    const message =
+        document.getElementById(
+            "hiddenMessage"
+        );
+
+
+    message.classList.add("show");
+
+
+    confetti();
+
+}
+
+
+
+
+
+
+</script>
+
+
+
+</body>
+
+</html>
